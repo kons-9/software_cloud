@@ -1,0 +1,8 @@
+{% extends "templete.html" %}
+{% block content %}
+<form method='POST', action="/append">
+  new todo item: <input type="text" name="todo_item">
+  <input type="submit" value="Add">
+</form>
+<a href="/see_all_item">See all items</a>
+{% endblock %}
